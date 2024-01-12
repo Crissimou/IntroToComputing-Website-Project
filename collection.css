@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #296a01;
+    background: linear-gradient(86deg, rgba(41,106,1,1) 0%, rgba(69,119,126,1) 11%, rgba(152,181,170,1) 29%, rgba(205,220,197,1) 49%, rgba(145,175,165,1) 75%, rgba(69,119,126,1) 90%, rgba(41,106,1,1) 100%);
+    /* background-image: url(img/island.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+
+
+section {
+    width: 100%;
+    height: 10vh;
+}
+
+section nav{
+    width: 100%;
+    height: 12vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px green;
+    background: rgb(2,52,110);
+    background: linear-gradient(93deg, rgba(2,52,110,1) 0%, rgba(75,187,5,1) 49%, rgba(2,52,110,1) 100%);
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+section nav .logo img{
+    width: 90px;
+    cursor: pointer;
+    margin: 8px 0;
+    margin-right: 100px;
+}
+section nav ul{
+    list-style: none;
+}
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 23px;
+}
+section nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+section nav li a:hover{
+    color:  rgb(3, 15, 71);
+}
+
+
+/* ------Search Icon Animation------- */
+section nav .search-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section nav .search-icon .input{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+section nav .search-icon .input::placeholder {
+    color: transparent;
+  }
+  
+section nav .search-icon .input:focus::placeholder {
+    color: rgb(131, 128, 128);
+  }
+  
+  section nav .search-icon .input:focus,.input:not(:placeholder-shown) {
+    background-color: #fff;
+    border: 1px solid rgb(91, 107, 255);
+    width: 200px;
+    cursor: none;
+    padding: 18px 16px 18px 45px;
+  }
+  
+  section nav .search-icon .icon {
+    position: absolute;
+    left: 0;
+    height: 32px;
+    width: 34px;
+    background-color: #fff;
+    border-radius: 99px;
+    z-index: -1;
+    fill: rgb(2,52,110);
+    border: 1px solid rgb(91, 107, 255);
+  }
+  
+  section nav .search-icon .input :focus + .icon,.input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+
+/* Books */
+.arvls{
+    width:90%;
+    height: auto;
+    margin: 5% 5% 0 5%;
+    background-color: rgba(253, 255, 252, 0.5);
+    padding-bottom: 50px;
+    padding-top: 20px;
+    
+}
+
+.arvls h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 5%;
+    font-weight: 900;
+    color: rgb(12, 67, 3);
+    text-shadow: 10px 10px 15px rgb(27, 110, 5);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+
+.arvls .arvls-box {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 30px;
+    padding-bottom: 5%;
+    
+}
+.arvls .arvls-box .arvls-cards{
+    width: 80px;
+    height: 120px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid darkgreen;
+    margin: auto 0;
+}
+
+.arvls .arvls-box .arvls-cards:hover{
+    box-shadow: 0 0 10px darkgreen;
+}
+
+.arvls .arvls-box .arvls-cards .arvls-image{
+    width: 80px;
+    height: 90px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.arvls .arvls-box .arvls-cards .arvls-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arvls .arvls-box .arvls-cards:hover .arvls-image img{
+    transform: scale(1.1);
+}
+
+.arvls .arvls-box .arvls-cards .arvls-tag {
+    margin-top: 0; /* Set a fixed height */
+    display:inline-flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.arvls .arvls-box .arvls-cards .arvls-tag a {
+    padding: 5px 10px;
+    border: 4px solid darkgreen;
+    background-color: #066e29;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 8px; /* Adjust top margin */
+}
+
+button{
+    margin-top: -250px;
+    margin-left: 40px;
+    width: 60px;
+    height: 30px;
+    color: #9c9a9a;
+    font-size: 15px;
+    background-color: #034952;
+    border-radius: 10px;
+    
+}
+
+#myDIV {
+    width: 300px;
+    padding: 1%;
+    text-align:justify;
+    background-color: rgb(12, 204, 147);
+    margin-top: -35px;
+    margin-left: 120px;
+    border-radius: 10px;
+    display:none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+   /* Media Query */
+   @media only screen and (max-width: 768px) {
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    
+    section {
+        width: 100%;
+        height: 70vh;
+       /*  background-image: url(img/fallsgiphy.gif); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0;
+    } 
+    section nav{
+        width: 100%;
+        height: 8.5vh;
+    }
+
+    section nav .logo img {
+        width: 60px;
+        margin-left: -20%;
+    }
+    
+    section nav ul {
+        display: none;
+        flex-direction:column;
+        text-align: center;
+        position:absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(2, 52, 110);
+        z-index: 99;
+    }
+
+    section nav ul.active {
+        display: flex;
+        background-color: #037d0f;
+    }
+
+    section nav li {
+        padding: 10px 0;
+        width: 95%;
+        font-size: 20px;
+        border-bottom: 1px solid #000000;
+    }
+
+    
+    section nav .hamburger {
+        display: block;
+        cursor: pointer;
+        order: 1;
+    }
+
+    section nav .search-icon {
+        display: none;
+        /* Add this line to hide the search icon on smaller screens */
+    }
+
+}
+
+
+
+
+
+
+
+
+ /* Media Queries for larger screens */
+ @media only screen and (min-width: 769px) {
+    section nav .hamburger {
+        display: none;
+        /* Add this line to hide the hamburger icon on larger screens */
+    }
+}
